@@ -1,3 +1,4 @@
+# paginas que nao quero subir pro GitHub
 coverage/
 node_modules/
 .DS_Store
