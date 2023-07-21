@@ -1,30 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
-    <meta charset="utf-8">
-    <meta charset="UFT-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>For Science codes 
-    </title>
-    <link rel="stylesheet" href="style.css" />
-    
-    <main>
-
-
-    </main>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ► Science codes ► </title>
+    <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
-    <section id="title">
-      <h1>For Science codes!</h1>
-      <p> Hey scientists, are you ready to add your secrets informations?</p>
-    </section>
+  <body>  
+    <header> 
+      <nav>
+        <div class="Menu">
+        <details><summary>► About ►</summary>
+        <p>Proposta pelo físico Hugh Everett em 1957, a interpretação de muitos-mundos prevê a presença de linhas de tempo ramificadas ou realidades alternativas nas quais nossas decisões se desenrolam de maneira diferente, às vezes produzindo resultados totalmente distintos.</p></details><br>
+        <a href="#footer"> ► Contato ► </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="Intro">
+        <h1>For Science codes!</h1>
+      </div>
+
+      <hr>
+
+      <div class="Information">
+        <h3> Hey scientists, are you ready to add your secrets informations?</h3>
+        <p> We know that several scientists has many important information to upload and make it safe from hackers. Thinking about it, we 
+        developed a new website to help you with your repository. </p> 
+        <br>
+      </div>
+
+      <div id= "Paragraph">
+        <h4> It's very simple to add you repository here, just follow the steps:</h4>
+      </div>  
+
+      <div id = "Options">
+        <li> First, you need to write your messagem in message box; </li>
+      <br>
+        <li>Second, you need to click on the cipher botton; </li>
+      <br>
+        <li> You can choose your displacement from 1 to 3; </li>
+      <br>
+        <li>Simple and fast. Now you can keep your repository here.</li>
+      <br> 
+      </div>  
+
+     <section class="Cipher">
+        <label for="message"> Message here:</label>
+        <input type="text" id="message"> 
+      <br>
+     </section>
+
+      <section class="Decipher">
+        <label for= "displacement"><b> Secret displacement:</b></label>
+        <input type="number" id="Displacement" min="1" value="26">
+      </section> 
+        <p id="subtitle"> Use the same "Secret displacement to Decipher.</p>
+      <br>
+      
+      <section id="Container">
+        <textarea id="entertext" placeholder="Type your conficencial repository here 🔐"></textarea>
+        <textarea id="textexit" readonly></textarea>
+       </section>
 
 
+      <section id="buttons">
+        <button class="button" id="cript">Criptografar</button>
+        <button class="button" id="descript">Descriptografar</button>
+      </section>
+    </main>
+    <br>
 
 
-
+      <footer id="footer">
+      <p>Todos os direitos autorais reservados: <br> 
+        https://github.com/tamarataraujo | Laboratória SAP011</p>
+      </footer>
 
 
     <script src="index.js" type="module"></script>
