@@ -1,4 +1,5 @@
-import cipher from './cipher.js';
+import * as cipher from './cipher.js';
+
 
 console.log(cipher);
 //<img src="./bg-desktop.jpg" alt="Send Message" align ="top-center">//
@@ -9,13 +10,13 @@ const crip = document.getElementById("cript");
 const box2 = document.getElementById("textexit");
 const descrip = document.getElementById("descript");
 
-crip.addEventListener("click", Codeaction);
-descrip.addEventListener("click", Decodeaction);
+crip.addEventListener("click", CodeAction);
+descrip.addEventListener("click", DecodeAction);
 
-function Codeaction() {
+function CodeAction() {
   box1.value = cipher.encode(parseInt(offset.value), box1.value);
 }
 
-function Decodeaction() {
+function DecodeAction() {
   box2.value = cipher.decode(parseInt(offset.value), box1.value);
 }
