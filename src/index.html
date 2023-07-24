@@ -13,12 +13,13 @@
       <nav>
         <div class="Menu">
         <details><summary>► About ►</summary>
-        <p>Proposta pelo físico Hugh Everett em 1957, a interpretação de muitos-mundos prevê a presença de linhas de tempo ramificadas ou realidades alternativas nas quais nossas decisões se desenrolam de maneira diferente, às vezes produzindo resultados totalmente distintos.</p></details><br>
+        <p>Proposta pelo físico Hugh Everett em 1957, a interpretação de muitos-mundos prevê a presença de linhas de tempo ramificadas ou realidades alternativas nas quais nossas decisões se desenrolam de maneira diferente, às vezes produzindo resultados totalmente distintos.
+        </p></details><br>
         <a href="#footer"> ► Contato ► </a>
         </div>
       </nav>
     </header>
-    
+
     <main>
       <div class="Intro">
         <h1>For Science codes!</h1>
@@ -29,8 +30,9 @@
       <div class="Information">
         <h3> Hey scientists, are you ready to add your secrets informations?</h3>
         <p> We know that several scientists has many important information to upload and make it safe from hackers. Thinking about it, we 
-        developed a new website to help you with your repository. </p> 
-        <br>
+        developed a new website to help you with your repository. 
+        </p> 
+      <br>
       </div>
 
       <div id= "Paragraph">
@@ -48,32 +50,26 @@
       <br> 
       </div>  
 
-     <section class="Cipher">
-        <label for="message"> Message here:</label>
-        <input type="text" id="message"> 
-      <br>
-     </section>
-
-      <section class="Decipher">
-        <label for= "displacement"><b> Secret displacement:</b></label>
-        <input type="number" id="Displacement" min="1" value="26">
-      </section> 
-        <p id="subtitle"> Use the same "Secret displacement to Decipher.</p>
+    
+        <label for= "Displacement"><strong> Secret displacement:</strong></label> <br>
+        <input type="number" id="Displacement" min="1" max="26" placeholder="nº">
+        <p id="subtitle"> Use the same "Secret displacement to Decipher.  </p>
       <br>
       
       <section id="Container">
-        <textarea id="entertext" placeholder="Type your conficencial repository here 🔐"></textarea>
-        <textarea id="textexit" readonly></textarea>
-       </section>
+        <textarea id="textoInserido" placeholder="Type your conficencial repository here 🔐"></textarea>
+        <textarea id="textoResultado" readonly placeholder="Here is your result"></textarea>
+      </section>
 
       <section id="buttons">
-        <button class="button" id="cript">Criptografar</button>
-        <button class="button" id="descript">Descriptografar</button>
+        <input type="button" id="btnEncode" value="Encode">
+        <input type="button" id="btnDecode" value="Decode">
       </section>
-    </main>
-    <br>
 
-      <footer id="footer">
+    </main> 
+
+    <br>
+    <footer id="footer">
       <p>Todos os direitos autorais reservados: <br> 
         https://github.com/tamarataraujo | Laboratória SAP011</p>
       </footer>

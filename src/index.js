@@ -1,22 +1,22 @@
-import * as cipher from './cipher.js';
+import cipher from "./cipher.js";
 
+const btnEncode = document.getElementById("btnEncode");
+const btnDecode = document.getElementById("btnDecode");
 
-console.log(cipher);
-//<img src="./bg-desktop.jpg" alt="Send Message" align ="top-center">//
+btnEncode.addEventListener("click", function() {
+  const valorDesloc = parseInt(document.querySelector("#Displacement").value);
+  const msgInserida = document.querySelector("#textoInserido").value;
+  const msgInseridaEmMaiusculas = msgInserida.toUpperCase();
 
-const offset = document.getElementById("Displacement");
-const box1 = document.getElementById("entertext");
-const crip = document.getElementById("cript");
-const box2 = document.getElementById("textexit");
-const descrip = document.getElementById("descript");
+  const msgCodificada = cipher.encode(valorDesloc, msgInseridaEmMaiusculas);
+  document.getElementById("textoResultado").value = msgCodificada;
+});
 
-crip.addEventListener("click", CodeAction);
-descrip.addEventListener("click", DecodeAction);
+btnDecode.addEventListener("click", function() {
+  const valorDesloc = parseInt(document.querySelector("#Displacement").value);
+  const msgInserida = document.querySelector("#textoInserido").value;
+  const msgInseridaEmMaiusculas = msgInserida.toUpperCase();
 
-function CodeAction() {
-  box1.value = cipher.encode(parseInt(offset.value), box1.value);
-}
-
-function DecodeAction() {
-  box2.value = cipher.decode(parseInt(offset.value), box1.value);
-}
+  const msgDecodificada = cipher.decode(valorDesloc, msgInseridaEmMaiusculas);
+  document.getElementById("textoResultado").value = msgDecodificada;
+});
