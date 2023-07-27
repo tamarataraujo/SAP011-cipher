@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icon.ico.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/icon.ico.png" type="image/x-icon">
     <title> ► Science codes ► </title>
-    <img src="science-day-1636549802.jpg" alt="Logo Science Page"
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="index.js" type="module"></script>
                 
   </head>
 
   <body>  
     <header> 
       <nav>
-        <div class="Menu">
-        <details><summary>About </summary>
-        <p> Hey scientists, are you ready to add your secrets informations?</p>
-        <p> We know that several scientists has many important information to upload and make it safe from hackers. Thinking about it, we 
+        <div id="Menu">
+        <details><summary><b>About</b></summary>
+        <p class="Menu2"> Hey scientists, are you ready to add your secrets informations?</p>
+        <p class="Menu2"> We know that several scientists has many important information to upload and make it safe from hackers. Thinking about it, we 
           developed a new website to help you with your repository.</p>
         </details>
       <br>
@@ -26,40 +26,44 @@
       </nav>
     </header>
 
-    <main class="mainContainer">
+  <main>
 
-      <div class="Intro">
+      <div id="titulo">
         <h1>► ► Scientific Repository ► ► </h1>
       </div>
 
       <hr>
 
-      <div id= "Paragraph">
-        <h4> It's very simple to add you repository here, just follow the steps:</h4>
-      </div>  
+      <div>
+      <h4 id="modulo1"> It's very simple to add the repository here, follow the steps:</h4> <br>
+      </div>
 
-      <div id = "Options">
-        <li> First, you need to write your messagem in message box; </li><br>
-        <li>Second, you need to click on the cipher botton; </li><br>
-        <li> You can choose your displacement from 1 to 3; </li><br>
+      <div class= "Paragraph">
+        <li> First, You can choose your displacement from 1 to 3;  </li><br>
+        <li>Second, you need to write your messagem in message box; </li><br>
+        <li> Then, click on the cipher botton; </li><br>
         <li>Simple and fast. Now you can keep your repository here.</li><br> 
-      </div>  
-
-    
-        <label for= "Displacement"><strong> Secret displacement:</strong></label> <br>
-        <input type="number" id="Displacement" min="0" max="3" placeholder="nº">
-        <p id="subtitle"> Use the same "Secret displacement to Decipher.  </p>
-      <br>
+      </div>
       
-      <section id="Container">
-        <textarea id="textoInserido" placeholder="Type your conficencial repository here 🔐"></textarea>
-        <textarea id="textoResultado" readonly placeholder="Here is your result"></textarea>
-      </section>
+    <form class="form">
+       <div>
+        <label class="selector" for= "Displacement"><strong> Secret displacement:</strong></label> <br>
+      
+        <input class="Input_Displacement" type="number" id="Displacement" min="0" max="3" placeholder="nº">
+       
+        <p class="subtitle"> Use the same Secret displacement to Decipher.</p>
+        <br>
+        <input class="buttons" type="button" id="btnEncode" value="Encode">
+        <input class="buttons" type="button" id="btnDecode" value="Decode">
+       </div>
+      
+       <div class="texto1">
+          <textarea id="textoInserido" placeholder="Type your conficencial repository here 🔐"></textarea>
+          <textarea id="textoResultado" readonly placeholder="Here is your result"></textarea>
+        </div>
 
-      <section id="buttons">
-        <input type="button" id="btnEncode" value="Encode">
-        <input type="button" id="btnDecode" value="Decode">
-      </section>
+            
+    </form>
 
     </main> 
 
@@ -67,9 +71,8 @@
     <footer id="footer">
       <p>Todos os direitos autorais reservados: <br> 
         https://github.com/tamarataraujo | Laboratória SAP011</p>
-        <img src="microscope_image.png" alt="Logo microscopy">
+        <img id="microscopio" src="images/microscope_image.png" alt="Logo microscopy">
       </footer>
 
-    <script src="index.js" type="module"></script>
-  </body>
+    </body>
 </html>
