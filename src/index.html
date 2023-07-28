@@ -35,44 +35,40 @@
       <hr>
 
       <div>
-      <h4 id="modulo1"> It's very simple to add the repository here, follow the steps:</h4> <br>
+      <h4 id="modulo1"> <b> It's very simple to add the repository here </b></h4> <br>
       </div>
 
       <div class= "Paragraph">
-        <li> First, You can choose your displacement from 1 to 3;  </li><br>
+        <br><li> First, You can choose your displacement from 1 to 3;  </li><br>
         <li>Second, you need to write your messagem in message box; </li><br>
         <li> Then, click on the cipher botton; </li><br>
-        <li>Simple and fast. Now you can keep your repository here.</li><br> 
+        <p> <b> Now you can keep your repository here.</p></b><br> 
       </div>
       
     <form class="form">
-       <div>
-        <label class="selector" for= "Displacement"><strong> Secret displacement:</strong></label> <br>
-      
-        <input class="Input_Displacement" type="number" id="Displacement" min="0" max="3" placeholder="nº">
-       
-        <p class="subtitle"> Use the same Secret displacement to Decipher.</p>
-        <br>
-        <input class="buttons" type="button" id="btnEncode" value="Encode">
-        <input class="buttons" type="button" id="btnDecode" value="Decode">
-       </div>
-      
+            
        <div class="texto1">
           <textarea id="textoInserido" placeholder="Type your conficencial repository here 🔐"></textarea>
-          <textarea id="textoResultado" readonly placeholder="Here is your result"></textarea>
-        </div>
-
-            
+          </div>
+          <div>
+            <label class="selector" for= "Displacement"><strong> Choose the offset:</strong></label>
+            <input class="Input_Displacement" type="number" id="Displacement" min="0" max="3" placeholder="nº">
+            <p class="subtitle"> Use the same offset to decode.</p>
+            <input class="buttons" type="button" id="btnEncode" value="Encode">
+            <input class="buttons" type="button" id="btnDecode" value="Decode">
+           </div>
+          <div><textarea id="textoResultado" readonly placeholder="Here is your result"></textarea>
+          </div>
+             
     </form>
 
     </main> 
 
-    <br>
-    <footer id="footer">
-      <p>Todos os direitos autorais reservados: <br> 
+     <footer id="footer">
+       <p>Todos os direitos autorais reservados: <br> 
         https://github.com/tamarataraujo | Laboratória SAP011</p>
-        <img id="microscopio" src="images/microscope_image.png" alt="Logo microscopy">
       </footer>
+    </div>
 
     </body>
-</html>
+</html> 

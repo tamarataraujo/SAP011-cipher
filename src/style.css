@@ -5,175 +5,182 @@
 }
 
 body {
-    background-image: url(images/science-day-1636549802.jpg);
+    background-image: url(images/science_.png);
     height: 100vh; /* vh é ref ao tamanho da tela*/
     width: 100vw;
     background-position: center;
     background-size: cover;
-    
+    background-attachment: fixed;
+    text-align: center;
+   }
 
+#Menu  {
+    font:30px sans-serif;
+    margin-top: 1%;
+    margin-left: 1%;
+    color:#2d2432;
 
-}
-
-#Menu {
-    margin-top: 2%;
-    margin-left: 10%;
-    font-family: sans-serif;
-    font-size: 1.3em;
-    color:#d2d0d6;
-
-}
-#science img{
-    background-image: url(images/science-day-1636549802.jpg);
-    object-fit: cover;
-        /* Centralizar a imagem e preencher todo o espaço disponível */
-    background-position: center;
-    background-size: cover;
-    background-color: #f0f0f0;
 }
 
 #titulo {
 
-        font-family: 'Quicksand', sans-serif;
-        background-color: #663399;
-        color: beige;
-        text-align: center; 
-        width: 100%;
-        height: 60px;
-        margin-top: 0;
-        font-size: 23px;
+    font: 40px 'Quicksand', sans-serif ;
+    background-color: #663399;
+    color: beige;
+    text-align: center; 
+    margin-top:0;
+    height: 100px;
+    width: 1900px;
+    padding: 10px;
+    display: flex;
+    display: inline-block;
+    border-radius: 10px;
+    
+    
+        
 }
 
   /*  parágrafos "It's very simple to add..." */
 #modulo1 {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
+    font: 45px 'Quicksand', sans-serif;
     text-align: center;
-    color: #2e2d30;
+    color: #19191a bold;
     margin-top: 2%;
+            
 }
 
-.form {
-    display:flex;
-    justify-content: space-around;
 
-}
 .Paragraph {
     color: #473863;
-    background-color: antiquewhite; 
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font:26px sans-serif;
     text-align: center;
-    width: 80%;
-    margin-inline-start: 20%;
-    margin-inline: 6%;
-      
+    width: 78%;
+    height: 250px;
+    margin-top: 2%;
+    margin-inline-start: 30%;
+    margin-inline: 10%;
+    border-radius: 50px;
+    border-style:dashed;
+
+    
+}
+
+.form  {
+    display:flex;
+    justify-content: space-around;
+    margin-top: 1%;
+    display:inline-block;
+
 }
 
 .selector {
     margin-top: 1%;
-    font-family: sans-serif;
-    font-size: 18px;
-   
-
+    font:30px sans-serif;
+    color: #2d2432;
+    align-items: center;
+  
+    
 }
-#Displacement {
+
+.Input_Displacement {
+    font-size: 22px;
+    text-align: center;
+    width: fit-content;
     border-bottom:#2e2d30;
     background-color:antiquewhite;
     border-radius: 5px;
     box-shadow: 5px 5px 5px;
-    margin-bottom:1%;
+    margin-bottom:3%;
+    margin-top: 3%;
+    padding: 5px;
     
-        
-}
-.texto1 {
-    display:flex;
-    flex-direction:column;
+    
+
 }
 
 .subtitle{
-    font-family: sans-serif;
-    font-size: 17px;
-
+    font: 28px sans-serif;
+   
 
 }
+
+.texto1 {
+    display:flex;
+    flex-direction:column;
+
+}
+
 #textoInserido  {
+    font: 25px sans-serif;
     width: 45em;
-    height: 100px;
-    margin-bottom: 10px;
+    height: 120px;
+    margin-bottom: 5%;
+    margin-top: 5%;
     background-color: #ba56d9b7; 
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 10px 15px black;
     padding: 10px;
-    font-size: 16px;
+       
     /*margin-left: 50%;*/
     
   }
-  #textoInserido::placeholder{
+
+#textoInserido::placeholder{
     color: aliceblue;
+    font-size: 25px;
   }
 
   #textoResultado {
+    font: 25px sans-serif ;
     width: 45em;
-    height: 100px;
+    height: 120px;
     margin-bottom: 10px;
     background-color: #ba56d9b7; 
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow: 0 10px 15px black;
     padding: 10px;
-    font-size: 16px;
+    
     /*margin-left: 50%;*/
-   
+  }
+
+#textoResultado::placeholder{
+    color: aliceblue;
+    font-size: 25px;
   }
 
   /* Estilo para os botões "Encode" e "Decode" */
 .buttons  {
+    font-size: 28px;
     background-color: #9370db; 
     color: #fff;
-    border: none;
+    border-color: #19191a;
+    border-radius: 8px;
     padding: 10px 20px;
-    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
 .buttons:hover {
+    font-size: 18px;
     background-color: #2e2d30; 
     color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
   
-    
-
-
-  
-  /* Estilo para o footer */
+   
 #footer {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
+    font: 20px Arial, Helvetica, sans-serif;
     font-weight: 400;
-    color: #4b0082;
-    margin-top: 4px;
-    margin-bottom: 4px;
+    color: #09090a;
+    margin-top: 15px;
+    margin-bottom: 1px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   
+   
   }
   
-#microscopio img {
-    background-image: url(images/microscope_image.png);
-    object-position: left ;
-}
-  
-
-    
-  
-  /* Estilo para a caixa de texto "Type your confidential repository here" */
-  
-  
-  /* Estilo para a caixa de texto "Here is your result" */
  
