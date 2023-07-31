@@ -28,15 +28,15 @@ Message Encoding: Users can input their confidential information into the reposi
 ### 3. Technologies
 - HTML
 
-![HTML Logo](src\images\html.ico.png)
+![HTML Logo](src\images\html.png)
 
 - CSS
 
-![HTML Logo](src\images\css.ico.png)
+![HTML Logo](src\images\css.png)
 
 - JavaScript (Vanilla)
 
-![HTML Logo](src\images\javacript.ico.png)
+![HTML Logo](src\images\javacript.png)
 
 
 ####       General Information: 
