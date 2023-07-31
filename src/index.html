@@ -15,41 +15,38 @@
   <body>  
     <header> 
       <nav>
-        <div id="Menu">
-        <details><summary><b>About</b></summary>
-        <p class="Menu2"> Hey scientists, are you ready to add your secrets informations?</p>
-        <p class="Menu2"> We know that several scientists has many important information to upload and make it safe from hackers. Thinking about it, we 
-          developed a new website to help you with your repository.</p>
-        </details>
-      <br>
+        <div id="titulo">
+          <h1> ► Scientific Repository ► </h1>
         </div>
       </nav>
     </header>
 
   <main>
 
-      <div id="titulo">
-        <h1>► ► Scientific Repository ► ► </h1>
-      </div>
-
+      <div id="Menu">
+        <details><summary><strong><ins>About</ins></strong></summary>
+        <p class="Menu2"> We know that several scientists has many important information to upload and make it safe from hackers. Thinking about it, we 
+          developed a new website to help you with your repository.</p>
+        </details>
+       </div>
       <hr>
 
       <div>
-      <h4 id="modulo1"> <b> It's very simple to add the repository here </b></h4> <br>
+      <h4 id="modulo1"> <b> It's very simple to add the repository here </b></h4> 
       </div>
-
-      <div class= "Paragraph">
-        <br><li> First, You can choose your displacement from 1 to 3;  </li><br>
-        <li>Second, you need to write your messagem in message box; </li><br>
-        <li> Then, click on the cipher botton; </li><br>
-        <p> <b> Now you can keep your repository here.</p></b><br> 
-      </div>
+      <div class="boxGeral"> <!-- div criada para englobar os itens da lista com o form em um flexbox -->
+        <div class= "Paragraph">
+        <br><li> First, write your messagem in message box;   </li>
+        <li> Second, choose your offset from 1 to 3; </li>
+        <li> Then, click on the cipher button; </li><br>
+        <p> <strong> Done, your repository has been encrypted.</strong> </p>
+        </div>
       
     <form class="form">
             
-       <div class="texto1">
+       <div class="texto1"> 
           <textarea id="textoInserido" placeholder="Type your conficencial repository here 🔐"></textarea>
-          </div>
+        </div>
           <div>
             <label class="selector" for= "Displacement"><strong> Choose the offset:</strong></label>
             <input class="Input_Displacement" type="number" id="Displacement" min="0" max="3" placeholder="nº">
@@ -61,6 +58,7 @@
           </div>
              
     </form>
+       </div>
 
     </main> 
 
@@ -68,7 +66,5 @@
        <p>Todos os direitos autorais reservados: <br> 
         https://github.com/tamarataraujo | Laboratória SAP011</p>
       </footer>
-    </div>
-
     </body>
 </html> 
