@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.ico.png" type="image/x-icon">
+    <title> ► Science codes ► </title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" type="module"></script>
+                
+  </head>
+
+  <body>  
+    <header> 
+      <nav>
+        <div id="titulo">
+          <h1> ► Scientific Repository ► </h1>
+        </div>
+      </nav>
+    </header>
+
+  <main>
+
+      <div id="Menu">
+        <details><summary><strong><ins>About</ins></strong></summary>
+        <p class="Menu2"> We know that several scientists has many important information to upload and make it safe from hackers. Thinking about it, we 
+          developed a new website to help you with your repository.</p>
+        </details>
+       </div>
+      <hr>
+
+      <div>
+      <h4 id="modulo1"> <b> It's very simple to add the repository here </b></h4> 
+      </div>
+      <div class="boxGeral"> <!-- div criada para englobar os itens da lista com o form em um flexbox -->
+        <div class= "Paragraph">
+        <br><li> First, write your messagem in message box;   </li>
+        <li> Second, choose your offset from 1 to 3; </li>
+        <li> Then, click on the cipher button; </li><br>
+        <p> <strong> Done, your repository has been encrypted.</strong> </p>
+        </div>
+      
+    <form class="form">
+            
+       <div class="texto1"> 
+          <textarea id="textoInserido" placeholder="Type your conficencial repository here 🔐"></textarea>
+        </div>
+          <div>
+            <label class="selector" for= "Displacement"><strong> Choose the offset:</strong></label>
+            <input class="Input_Displacement" type="number" id="Displacement" min="0" max="3" placeholder="nº">
+            <p class="subtitle"> Use the same offset to decode.</p>
+            <input class="buttons" type="button" id="btnEncode" value="Encode">
+            <input class="buttons" type="button" id="btnDecode" value="Decode">
+           </div>
+          <div><textarea id="textoResultado" readonly placeholder="Here is your result"></textarea>
+          </div>
+             
+    </form>
+       </div>
+
+    </main> 
+
+     <footer id="footer">
+       <p>Todos os direitos autorais reservados: <br> 
+        https://github.com/tamarataraujo | Laboratória SAP011</p>
+      </footer>
+    </body>
+</html> 
